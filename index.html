@@ -14,62 +14,274 @@
 <body>
     <div class="container-fluid" id="header">
         <div class="container" id="header-menu">
-            <div class="row d-flex justify-content-between">
-                <div class="col-3 d-flex align-items-center" >
+            <div class="row justify-content-between">
+                <div class="col-6 d-flex align-items-center" >
                     <div id="logo">
                         <img class="logo-img" src="assets/img/hanger-line.png" alt="">
                     </div>
                     <h1 class="text-uppercase">clean<span>me</span>up</h1>
                 </div>
-                <div class="col-4">
+                <div class="col-4" id="menu-list">
                     <ul class="list-unstyled d-flex justify-content-between justify-content-center" id="nav">
                         <li>
-                            <a href="#">Pocetna</a>
+                            <a href="#">Početna</a>
                         </li>
                         <li>
                             <a href="#">Kontakt</a>
                         </li>
                         <li>
-                            <a  id="order" href="#">Naruci</a>
+                            <a  id="order-btn" href="#">Naruči</a>
                         </li>
                         <li>
-                            <a id="log-in" href="#">Log in</a>
+                            <a class="log-in" href="#">Log in</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container d-flex align-items-center" id="header-wrapper">
             <div id="header-text-wrapper">
                 <div id="header-text">
                     <h3>Mi brinemo o Vašoj odeći,<br>da bi ste Vi mogli da se posvetite svemu ostalom.</h3>
                     <p>Najsigurnije i najpovoljnije hemijsko čišćenje</p>
                 </div>
-                <div class="header-form">
-                    <tabel id="header-table">
-                        <th>
-                            <td>
-                                Vaša Adresa
-                            </td>
-                            <td colspan="2">
-                                Broj Telefona
-                            </td>
-                        </th>
-                    </tabel>
+                <div id="header-form">
                     <form class="row g-3">
                         <div class="col-auto">
-                            <input type="text" class="form-control" id="inputext" placeholder="Ulica, broj, sprat">
+                          <label for="vasaadresa">Vaša Adresa</label>
+                          <input type="text" class="form-control tabs" id="vasaadresa" placeholder="Ulica, broj, sprat">
                         </div>
                         <div class="col-auto">
-                          <input type="number" class="form-control" id="inputnumber" placeholder="+381 XX XXX XXX">
+                          <label for="brojtelefona" class="visually-hidden">Broj Telefona</label>
+                          <input type="number" class="form-control tabs" id="brojtelefona" placeholder="+381 XX XXX XXX">
                         </div>
                           <button type="submit" class="btn btn-primary">Naruči</button>
-                      </form>
+                    </form>  
                 </div>
             </div>
             
         </div>
     </div>
-    
+    <div class="container-fluid gray-background">
+        <div class="container" id="services">
+                <h3 class="text-right title">Najjednostavniji put do čiste odeće</h3>
+                <div class="row justify-content-between ">
+                    <div class="col-4">
+                        <div class="services-tab d-flex align-items-center flex-column justify-content-center">
+                            <div class="services-img text-center">
+                                <img src="assets/img/truck.png" alt="">
+                            </div>
+                            <div class="services-text">
+                                <p class="text-center">Popunite formu ili nas pozovite i javite nam gde da pokupimo i gde da dostavimo garderobu, kao i koju od naših usluga želite.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-tab d-flex align-items-center flex-column justify-content-center">
+                            <div class="services-img text-center">
+                                <img src="assets/img/hands-washing.png" alt="">
+                            </div>
+                            <p class="text-center">U zavisnosti od izabrane usluge, naš vredni tim će se pobrinuti da Vaša odeća bude kvalitetno sređena.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="services-tab d-flex align-items-center flex-column justify-content-center">
+                            <div class="services-img text-center">
+                                <img src="assets/img/clothes.png" alt="">
+                            </div>
+                            <p class="text-center">Nakon dostave, Vaša odeća je oprana i opeglana i spremna za nošenje.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid  purple-background d-flex align-items-center" id="trades">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/tap-new.png">
+                    </div>
+                    <p>Jednostavno naručivanje</p>
+                </div>
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/XMLID_806_.png">
+                    </div>
+                    <p>Brza usluga</p>
+                </div>
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/truck-new.png">
+                    </div>
+                    <p>Besplatna dostava</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/suit.png">
+                    </div>
+                    <p>Usluga po Vašoj meri</p>
+                </div>
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/support.png">
+                    </div>
+                    <p>Online podrška 00-24</p>
+                </div>
+                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                    <div class="trades-img">
+                        <img src="assets/img/review.png">
+                    </div>
+                    <p>Kvalitetno oprana odeća</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid gray-background">
+        <div class="container" id="question">
+            <h3 class="text-left title-secound">Često postavljana pitanja</h3>
+            <div class="row questions">
+                <div class="col-6">
+                    <div class="question-tab d-flex">
+                        <p>Koliko koštaju usluge pranja i peglanja?</p>
+                        <img  src="assets/img/arrow-left.png">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="question-tab d-flex">
+                        <p>Kako mogu da platim Vaše usluge?</p>
+                        <img  src="assets/img/arrow-left.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row questions">
+                <div class="col-6">
+                    <div class="question-tab d-flex">
+                        <p>Koliko koštaju usluge pranja i peglanja?</p>
+                        <img  src="assets/img/arrow-left.png">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="question-tab d-flex">
+                        <p>Kako mogu da platim Vaše usluge?</p>
+                        <img  src="assets/img/arrow-left.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid purple-background" id="order">
+        <div id="order-wrapper" class="col-12 text-center">
+            <div id="order-text">
+            <h3 class="font-weight-bold">Naručite pranje Vaše odeće već sad</h3>
+            <button class="btn btn-secound">Naruči</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="users">
+        <h3 class="text-right title">Šta kažu naši korisnici o nama</h3>
+        <div class="row justify-content-between">
+            <div class="col-5  d-flex justify-content-between user">
+                <div class="user-img">
+                    <img src="assets/img/girl.png">
+                    <p class="font-italic">Irena, 28, Beograd</p>
+                </div>
+                <div class="review">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>     
+                    </ul>
+                    <p>Izvanredna usluga, brza dostava i odeća mi je oprana u skladu sa tim što sam tražila. Odlično!</p>
+                </div>
+            </div>
+            <div class="col-5  d-flex justify-content-between user">
+                <div class="user-img">
+                    <img src="assets/img/man-1209494_640.png">
+                    <p class="font-italic">Marko, 42, Beograd</p>
+                </div>
+                <div class="review">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>
+                        <li>
+                            <img src="assets/img/star.png">
+                        </li>     
+                    </ul>
+                    <p>Sve je uradjeno tako kako sam trazio, garderoba mi je oprana za par sati i donesena na adresu. Sve pohvale!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2" id="left-side">
+                    <ul class="list-unstyled">
+                        <li><p>KOMPANIJA</p></li>
+                        <li>
+                            <a href="#">Usluge</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3" id="right-side">
+                    <ul class="list-unstyled">
+                        <li><p>PODRŠKA</p></li>
+                        <li>
+                            <a href="#">Najčešće postavljena pitanja</a>
+                        </li>
+                        <li>
+                            <a href="#">Načini Plaćanja</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-7 text-right" id="social">
+                <p>PRATITE NAS</p>
+                <div id="social-icon">
+                    <ul class="list-unstyled d-flex justify-content-end">
+                        <li>
+                            <a href="#">
+                                    <img src="assets/img/facebook.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/linkedin.png">
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+                <p>@ 2020 CleanMeUp. Sva prava zadržana.</p>
+            </div>
+            </div>
+        </div>   
+    </div>
 </body>
 </html>

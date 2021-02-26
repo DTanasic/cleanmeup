@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=general.css.map */
+.btn {
+  color: #fff;
+  background-color: #7AD0DB !important;
+}
+
+.title {
+  color: #6200FF;
+  padding-top: 110px;
+  padding-bottom: 97px;
+  font-weight: bold;
+}
+
+.title-secound {
+  color: #6200FF;
+  padding-top: 110px;
+  padding-bottom: 72px;
+  font-weight: bold;
+}
+
+.purple-background {
+  background-color: #6A4AA4;
+}
+/*# sourceMappingURL=general.css.map */

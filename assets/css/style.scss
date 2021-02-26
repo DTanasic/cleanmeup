@@ -1,18 +1,28 @@
 @import "variables";
 @import "general";
 
+
 * {
     padding: 0;
     margin: 0;
 }
 
+a, a:hover {
+    text-decoration: none;
+     
+}       
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    p{
+        color: #FFFFFF;
+    }
 }
 #header {
     background-image:url("../img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 1074px;
+   
 }
 #header-menu {
     padding-top: 30px;
@@ -26,6 +36,20 @@ body {
         padding: 5px;
     }
 }
+#menu-list {
+    max-width: 29.333333%;
+    ul {
+        margin-top: 15px;
+    }
+    a {
+        font-size: 18px;
+        color: #FFFFFF;
+        &:hover {
+            color:$hovercolor;
+        }
+    }
+    
+}
 h1 {
     font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 30px;
@@ -35,36 +59,30 @@ h1 {
 h1 span {
     color:$logocolor;
 }
-.col-4 {
-    ul {
-        margin-top: 15px;
-    }
-    a {
-        font-size: 15px;
-        text-decoration: none;
-        color: #FFFFFF;
-        &:hover {
-            color:#FFFFFF;
-        }
-    }
-    
-}
-#order  {
+
+#order-btn  {
     background:#FFFFFF;
     padding: 10px 20px;
     border-radius: 5px;
-     color:#6200FF;
+     color: $h3color !important;
+     &:hover {
+         color:$hovercolor;
+     }
     
 }
-#log-in {
+.log-in {
     padding: 10px 20px;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
+    background: transparent;
+    color:#FFFFFF;
+    font-size: 18px;
 }
-#header-text-wrapper {
-    margin-top: 300px;
-    margin-left: 65px;
+#header-wrapper {
+   min-height: 800px;
+    padding-left: 75px;
 }
+
 #header-text {
     color: #FFFFFF;
     h3 {
@@ -76,9 +94,262 @@ h1 span {
         font-size: 23px;
     }
 }
-.header-form {
-    padding: 30px 0px;
+.btn-primary {
+    margin-top: 32px;
+    width: 150px;
+    height: 50px;
+    &:hover{
+        background-color: $buttoncolorhover !important;
+    }
 }
-#header-tablee {
-    justify-content: space-between;
+
+.tabs {
+    width: 332px;
+    height: 50px;
 }
+.col-auto label {
+    color: #FFFFFF
+}
+.gray-background {
+    background-color: $graybackgroundcolor;
+}
+#services {
+  min-height: 800px;
+}
+.services-tab {
+    padding:0px 55px ;
+    min-height:400px ;
+    border: 2px solid $bordercolor;
+    box-shadow: 3px 3px 6px $shadowcolor;
+    border-radius: 5px;
+    p{
+        color:$paragraphcolor;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+        
+}
+.services-img {
+
+    min-height: 180px;
+}
+
+
+#trades {
+    min-height: 900px;
+    background-color: $backgroundcolor;
+}
+
+.trade-circle {
+    p {
+        margin-top: 30px;
+    }
+}
+.trades-img {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #EBE8E8;
+    border-radius: 50%;
+}
+#question {
+    padding-bottom: 171px;
+}
+.questions {
+    padding-bottom: 42px;
+    &:last-child {
+        padding-bottom: 0px;
+    }
+}
+
+.question-tab {
+    padding: 29px 0px 29px 43px;
+    border: 2px solid $bordercolor;
+    box-shadow: 3px 3px 6px $shadowcolor;
+    border-radius: 40px;
+    p {
+        color: $paragraphcolor;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0px !important;
+        text-align: left;
+        width: 90%;
+    }
+}
+#order-wrapper {
+    line-height: 90px; 
+    padding: 90px 0px;
+}
+
+#order-text {
+    h3 {
+        color:#FFFFFF;
+        margin-bottom: 47px;
+    }
+    .btn-secound {
+        width: 250px;
+        height: 50px;
+    }
+}
+#users {
+    height: 660px;
+}
+ .user {
+    padding: 40px 26px;
+    border: 2px solid $bordercolor;
+    box-shadow: 3px 3px 6px $shadowcolor;
+    border-radius: 15px;
+ }
+ .user-img {
+     margin-right: 43px;
+     img {
+         width: 130px;
+         height: 130px;
+         border: 1px solid $imagebordercolor;
+         border-radius: 50%;
+     }
+     p {
+         font-size: 15px;
+         font-weight: bold;
+         color: $paragraphcolor;
+         margin-top: 16px;
+         text-align:center;
+     }
+ }
+ .review {
+     margin-top: 11px;
+    font-weight: bold;
+    p {
+        color: $paragraphcolor;
+        font-size: 17px;
+    }
+ }
+
+ #footer {
+     background-color: $footerbackground;
+    padding: 75px 0px 98px 0px;
+ }
+ #left-side , #right-side{
+    a,p {
+        color: #FFFFFF;
+        font-size: 16px;
+    
+    }
+    p {
+        font-weight: bold;
+    }
+        
+    
+    li{
+        margin-bottom:37px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    
+ }
+ #social {
+     font-weight: bold;
+    
+    ul {
+        margin-top: 38px;
+    }
+    li {
+        margin-left: 32px;
+        
+        &:last-child {
+           
+            padding: 0px;
+        }
+    }
+    p:last-child {
+        margin-top: 37px;
+    }
+ }
+ 
+ #header-btn {
+    margin: 60px 0px 0px 70px;
+ }
+#left-form {
+    color: #FFFFFF;
+    margin: 189px 0px 0px 70px; 
+    h4 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    li {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+#right-form {
+    margin:67px 0px 0px 147px;
+    color:#FFFFFF;
+    li{
+        h4 {
+            font-size: 28px;
+            margin-right: 54px;
+            border-bottom: 5px solid #FFFFFF;
+        }
+    }
+}
+.right-header {
+    margin-bottom: 45px;
+}
+.email {
+    padding-left: 56px;
+}
+.password-list {
+    padding-top: 50px;
+    padding-left: 17px;
+    color: $formlisttext;
+}
+.spacing td {
+    padding-bottom: 50px;
+}
+.re-password {
+    padding-top: 17px;
+}
+.check-styling {
+    padding-top: 17px;
+
+}
+.check-box {
+    padding-top: 42px;
+}
+
+
+
+
+.button-style {
+    padding-top: 76px;
+}
+
+.no-background {
+    border:1px solid $buttoncolor;
+    background: transparent !important;
+    color: $buttoncolor;
+    &:hover {
+        background-color: transparent !important;
+        color: $buttoncolor;
+        border:1px solid $buttoncolor;
+    }
+}
+
+.form-text {
+    padding-top: 30px;
+    font-size: 16px;
+
+}
+
+
+ @media (min-width: 1200px) {
+     .container {
+        max-width: 1560px;
+     }
+ }
