@@ -23,3 +23,12 @@
 .purple-background {
     background-color: $backgroundcolor;
 }
+
+.checkbox-style {
+    background-color: transparent;
+    appearance: none;
+    border: 1px solid #fff;
+    width: 21px;
+    height: 21px;
+    border-radius: 5px;
+}

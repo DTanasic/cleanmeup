@@ -20,4 +20,15 @@
 .purple-background {
   background-color: #6A4AA4;
 }
+
+.checkbox-style {
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #fff;
+  width: 21px;
+  height: 21px;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=general.css.map */

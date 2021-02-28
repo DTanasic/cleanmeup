@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet"  href="assets/css/style.css">
@@ -15,13 +14,13 @@
     <div class="container-fluid" id="header">
         <div class="container" id="header-menu">
             <div class="row justify-content-between">
-                <div class="col-6 d-flex align-items-center" >
+                <div class="col-5 d-flex align-items-center" >
                     <div id="logo">
                         <img class="logo-img" src="assets/img/hanger-line.png" alt="">
                     </div>
                     <h1 class="text-uppercase">clean<span>me</span>up</h1>
                 </div>
-                <div class="col-4" id="menu-list">
+                <div class="col-xl-4 col-lg-6  d-md-none d-none d-lg-block"  id="menu-list">
                     <ul class="list-unstyled d-flex justify-content-between justify-content-center" id="nav">
                         <li>
                             <a href="#">Početna</a>
@@ -37,6 +36,11 @@
                         </li>
                     </ul>
                 </div>
+                <div class="col-5 d-lg-none d-md-flex d-flex justify-content-end">
+                    <a href="#" class="hamburger">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="container d-flex align-items-center" id="header-wrapper">
@@ -48,9 +52,22 @@
                 <div id="header-form">
                     <form class="row g-3">
                         <div class="col-auto">
-                          <label for="vasaadresa">Vaša Adresa</label>
-                          <input type="text" class="form-control tabs" id="vasaadresa" placeholder="Ulica, broj, sprat">
+                          <label for="vasaadresa">Ulica i Broj</label>
+                          <input type="text" class="form-control tabs" id="ulicabroj" placeholder="">
                         </div>
+                        <div class="col-auto">
+                            <label for="sprat">Sprat</label>
+                            <input type="number" class="form-control tabs" id="sprat" placeholder="-">
+                          </div>
+                          <div class="col-auto">
+                            <label for="interfon">Interfon</label>
+                            <input type="text" class="form-control tabs" id="interfon" placeholder="-">
+                          </div>
+                          <div class="col-auto">
+                            <label for="opstina">Opština</label>
+                            <input type="text" class="form-control tabs" id="opstina" placeholder="Izaberi opštinu">
+                          </div>
+
                         <div class="col-auto">
                           <label for="brojtelefona" class="visually-hidden">Broj Telefona</label>
                           <input type="number" class="form-control tabs" id="brojtelefona" placeholder="+381 XX XXX XXX">
@@ -61,12 +78,12 @@
             </div>
             
         </div>
-    </div>
+    </div>  
     <div class="container-fluid gray-background">
         <div class="container" id="services">
                 <h3 class="text-right title">Najjednostavniji put do čiste odeće</h3>
-                <div class="row justify-content-between ">
-                    <div class="col-4">
+                <div class="row justify-content-between services-wrapper">
+                    <div class="col-lg-4 col-md-6 single-service">
                         <div class="services-tab d-flex align-items-center flex-column justify-content-center">
                             <div class="services-img text-center">
                                 <img src="assets/img/truck.png" alt="">
@@ -76,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 single-service">
                         <div class="services-tab d-flex align-items-center flex-column justify-content-center">
                             <div class="services-img text-center">
                                 <img src="assets/img/hands-washing.png" alt="">
@@ -84,7 +101,7 @@
                             <p class="text-center">U zavisnosti od izabrane usluge, naš vredni tim će se pobrinuti da Vaša odeća bude kvalitetno sređena.</p>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-6 single-service">
                         <div class="services-tab d-flex align-items-center flex-column justify-content-center">
                             <div class="services-img text-center">
                                 <img src="assets/img/clothes.png" alt="">
@@ -98,39 +115,37 @@
     <div class="container-fluid  purple-background d-flex align-items-center" id="trades">
         <div class="container align-items-center">
             <div class="row">
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/tap-new.png">
                     </div>
                     <p>Jednostavno naručivanje</p>
                 </div>
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/XMLID_806_.png">
                     </div>
                     <p>Brza usluga</p>
                 </div>
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/truck-new.png">
                     </div>
                     <p>Besplatna dostava</p>
                 </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/suit.png">
                     </div>
                     <p>Usluga po Vašoj meri</p>
                 </div>
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/support.png">
                     </div>
                     <p>Online podrška 00-24</p>
                 </div>
-                <div class="col-4 text-center d-flex flex-column align-items-center trade-circle">
+                <div class="col-lg-4  col-sm-6 text-center d-flex flex-column align-items-center trade-circle">
                     <div class="trades-img">
                         <img src="assets/img/review.png">
                     </div>
@@ -143,13 +158,13 @@
         <div class="container" id="question">
             <h3 class="text-left title-secound">Često postavljana pitanja</h3>
             <div class="row questions">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 single-question">
                     <div class="question-tab d-flex">
                         <p>Koliko koštaju usluge pranja i peglanja?</p>
                         <img  src="assets/img/arrow-left.png">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 single-question">
                     <div class="question-tab d-flex">
                         <p>Kako mogu da platim Vaše usluge?</p>
                         <img  src="assets/img/arrow-left.png">
@@ -157,13 +172,13 @@
                 </div>
             </div>
             <div class="row questions">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 single-question">
                     <div class="question-tab d-flex">
                         <p>Koliko koštaju usluge pranja i peglanja?</p>
                         <img  src="assets/img/arrow-left.png">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12 single-question">
                     <div class="question-tab d-flex">
                         <p>Kako mogu da platim Vaše usluge?</p>
                         <img  src="assets/img/arrow-left.png">
@@ -183,7 +198,7 @@
     <div class="container" id="users">
         <h3 class="text-right title">Šta kažu naši korisnici o nama</h3>
         <div class="row justify-content-between">
-            <div class="col-5  d-flex justify-content-between user">
+            <div class="col-lg-5  col-md-12 d-flex justify-content-between user">
                 <div class="user-img">
                     <img src="assets/img/girl.png">
                     <p class="font-italic">Irena, 28, Beograd</p>
@@ -209,7 +224,7 @@
                     <p>Izvanredna usluga, brza dostava i odeća mi je oprana u skladu sa tim što sam tražila. Odlično!</p>
                 </div>
             </div>
-            <div class="col-5  d-flex justify-content-between user">
+            <div class="col-lg-5  col-md-12 d-flex justify-content-between user">
                 <div class="user-img">
                     <img src="assets/img/man-1209494_640.png">
                     <p class="font-italic">Marko, 42, Beograd</p>
@@ -240,28 +255,20 @@
     <div class="container-fluid" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-2" id="left-side">
+                <div class="col-3" id="left-side">
                     <ul class="list-unstyled">
-                        <li><p>KOMPANIJA</p></li>
+                        <li>KORISNI LINKOVI</li>
                         <li>
                             <a href="#">Usluge</a>
                         </li>
                         <li>
                             <a href="#">Kontakt</a>
                         </li>
+                        <li>
+                            <a href="#">Uslovi Korišćenja</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-3" id="right-side">
-                    <ul class="list-unstyled">
-                        <li><p>PODRŠKA</p></li>
-                        <li>
-                            <a href="#">Najčešće postavljena pitanja</a>
-                        </li>
-                        <li>
-                            <a href="#">Načini Plaćanja</a>
-                        </li>
-                    </ul>
-            </div>
             <div class="col-7 text-right" id="social">
                 <p>PRATITE NAS</p>
                 <div id="social-icon">
@@ -282,6 +289,32 @@
             </div>
             </div>
         </div>   
+    </div>
+    <div class="container-fluid" id="sticky">
+        <div class="container">
+            <div class="row" id="sticky-wrapper"> 
+                <div class="col-lg-8 col-md-12 d-flex">
+                    <div class="sticky-img d-flex align-items-center">
+                        <img src="assets/img/cookie.png">
+                        <p>CleanMeUp koristi kolačiće kako bi konstantno poboljšavao Vaše iskustvo korišćenja sajta. <a href="#">Saznaj više o ovim kolačićima.</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-12 d-flex align-items-center justify-content-end">
+                    <ul class="list-unstyled d-flex justify-content-between justify-content-center" id="sticky-buttons" >
+                        <li id="accept">
+                            <a href="#">
+                                Prihvati
+                            </a>
+                        </li>
+                        <li id="quit">
+                            <a href="#">
+                                Odustani
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
