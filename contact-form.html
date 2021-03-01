@@ -53,78 +53,103 @@
             </div>
             <div class="container" id="form">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12" id="left-form">
-                        <h4>Zašto da napravim nalog?</h4>
-                        <ul class="list-unstyled">
-                            <li>Ukoliko napravite nalog, dobijate brojne pogodnosti:</li>
-                            <li> 1. Lakše naručivanje i plaćanje </li>
-                            <li>2. Možete da pratite status Vaše porudžbine</li>
-                            <li>3. Ostvarite popuste na naredne porudžbine</li>
-                        </ul>                
-                    </div>
                     <div class="col-lg-6 col-md-12"  id="right-form">
                         <div class="right-header">
-                            <ul class="list-unstyled d-flex">
-                                <li><h4>Vaše Informacije</h4></li>
-                                <li><p>Social Log-in<p></li>
-                            </ul>
+                             <h4>Gde kupimo odeću</h4>
                         </div>    
                         <div class="right-form-data">
                             <form action="" id="form-style">
                                 <table>
-                                    <tr class="spacing">
+                                    <tr>
                                         <td>
-                                            <label for="punoime">Puno Ime</label>
-                                            <input type="text" class="form-control tabs" id="punoime">
+                                            <div class="col-auto">
+                                                <label for="vasaadresa">Ulica i Broj</label>
+                                                <input type="text" class="form-control tabs" id="ulicabroj" placeholder="">
+                                            </div>
                                         </td>
-                                        <td class="email">
-                                            <label for="emailadresa">Email Adresa</label>
-                                            <input type="email" class="form-control tabs" id="emailadresa">
+                                        <td>
+                                            <div class="col-auto">
+                                                <label for="sprat">Sprat</label>
+                                                <input type="number" class="form-control tabs" id="sprat" placeholder="-">
+                                            </div> 
+                                        </td>
+                                        <td>
+                                            <div class="col-auto">
+                                                <label for="interfon">Interfon</label>
+                                                <input type="text" class="form-control tabs" id="interfon" placeholder="-">
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <label for="vasasifra">Vaša Šifra</label>
-                                            <input type="password" class="form-control tabs" id="vasasifra">
+                                            <div class="col-auto">
+                                                <p class="must">*Obavezno polje </p>
+                                            </div>
+                                            
+                                        </td>
+                                    </tr>
+                                       
+                                    <tr>
+                                        <td>
+                                            <label for="opstina">Opština</label>
+                                            <input type="text" class="form-control tabs" id="opstina" placeholder="Izaberi opštinu">
                                         </td>
                                         <td>
-                                            <ul class="list-unstyled password-list">
-                                                <li>* Sifra mora imati vise od 8 znakova </li>
-                                                <li>* Sifra mora da sadrzi jedno veliko slovo</li>
-                                            </ul>
-                                        </td> 
-                                    </tr>
-                                    <tr class="re-password">
+                                            <label for="datum">Datum</label>
+                                            <input type="date" class="form-control tabs" id="datum">
+                                        </td>
                                         <td>
-                                            <label for="ponovite">Ponovite Šifru</label>
-                                            <input type="password" class="form-control tabs" id="ponovite">
+                                            <label for="vreme">Vreme</label>
+                                            <input type="time" class="form-control tabs" id="vreme">
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="check-box"> 
                                             <ul class="list-unstyled check-style">
-                                                <li><div class="form-check d-flex justify-content-between align-items-center">
-                                                    <input class="form-check-input checkbox-style" type="checkbox" value="" id="prihvatam">
-                                                    <label class="form-check-label" for="prihvatam">
-                                                        Prihvatam uslove poslovanja CleanMeUp </label>
+                                                <li>
+                                                    <div class="form-check d-flex justify-content-between align-items-center">
+                                                    <input class="form-check-input checkbox-style" type="checkbox" value="" id="zapamti">
+                                                    <label class="form-check-label" for="zapamti">
+                                                        Zapamti adresu </label>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check d-flex justify-content-between align-items-center">
+                                                    <input class="form-check-input checkbox-style" type="checkbox" value="" id="dostava">
+                                                    <label class="form-check-label" for="dostava">
+                                                        Ista adresa je i za dostavu </label>
                                                 </li>
                                             </ul>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <ul class="list-unstyled d-flex justify-content-between button-style">
-                                                <li><button class="btn btn-primary no-background">Naruči</button></li>
-                                                <li><button class="btn btn-primary">Naruči</button></li>
-                                            </ul>
+                                            <button class="btn btn-primary">Naruči</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>    
+                    </div>
+                    <div class="col-lg-6 col-md-12"  id="right-form">
+                        <div class="right-header">
+                                <h4>Gde dostavljamo odeću</h4>
+                        </div>    
+                        <div class="right-form-data">
+                            <form action="" id="form-style">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label for="adresa">Adresa</label>
+                                            <input type="text" class="form-control tabs" id="adresa" placeholder="Ulica,broj,sprat">
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p class="text-center">Već imate CleanMeUp nalog? Ulogujte se <a href=>ovde</a></p>
+                                        <td class="text-area">
+                                             <label for="napomena">Napomena</label>
+                                            <textarea class="form-control" placeholder="Ako imate napomenu, unesite je ovde" id="napomena"></textarea>
+                                           
                                         </td>
                                     </tr>
-
                                 </table>
                             </form>
                         </div>    

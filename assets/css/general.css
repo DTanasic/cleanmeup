@@ -1,3 +1,9 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1560px;
+  }
+}
+
 .btn {
   color: #fff;
   background-color: #7AD0DB !important;
@@ -30,5 +36,10 @@
   width: 21px;
   height: 21px;
   border-radius: 5px;
+}
+
+.tabs {
+  max-width: 332px;
+  height: 50px;
 }
 /*# sourceMappingURL=general.css.map */
