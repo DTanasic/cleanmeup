@@ -17,13 +17,17 @@ body {
         color: #FFFFFF;
     }
 }
-#header , #header-order {
+
+/* header */
+
+#header {
     background-image:url("../img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 1074px;
    
 }
+
 #header-menu {
     padding-top: 30px;
 }
@@ -114,13 +118,28 @@ h1 span {
     }
 }
 
-#ulicabroj {
-    max-width: 332px;
+/* inputs on shop.html */
+.street {
+   width: 46%;
 }
 
-#sprat {
-   max-width: 50px;
+.floor {
+    width: 10%;
+} 
+.interphone {
+    width: 30%;
 }
+.area {
+    width: 30%;
+} 
+.date ,.time{
+    width:20%
+}
+
+#ulicabroj, #sprat , #interfon, #opstina, #datum , #vreme{
+    max-width: 100%;
+}
+
 #interfon, #brojtelefona {
    max-width: 150px;
 }
@@ -128,6 +147,26 @@ h1 span {
     max-width: 250px;
 }
 
+@media screen and (max-width:576px)
+{
+    .street {
+        width: 100%;
+    }
+    
+    .floor, .interphone {
+        margin-left: 0px !important;
+        margin-right: 0.5rem !important;
+    }
+
+    .floor {
+        width: 25%;
+    }
+    .interphone {
+        width: 40%;
+    }
+
+
+}
 .col-auto label {
     color: #FFFFFF
 }
@@ -281,6 +320,7 @@ h1 span {
  #footer {
      background-color: $footerbackground;
     padding: 75px 0px 98px 0px;
+
  }
  #left-side {
     a {
@@ -435,8 +475,32 @@ h1 span {
             font-size: 28px;
         }
     }
+    p {
+        font-size: 28px;
+    }
 }
 
+.payment-header {
+    max-width:356px;
+}
+
+#right-social-form {
+    margin-top: 67px;
+    color:#FFFFFF;
+    li{
+        h4 {
+            font-size: 28px;
+            margin-left: 54px;
+            border-bottom: 5px solid #FFFFFF;
+            line-height: 43px;
+           
+        }
+        p {
+            font-size: 28px;
+        }
+
+    }
+}
 #form-style {
     
     table {
@@ -450,7 +514,7 @@ h1 span {
         font-size: 30px;
     }
 }
-.email {
+.email{
     padding-left: 56px;
 }
 .password-list{
@@ -461,9 +525,36 @@ h1 span {
 .spacing td {
     padding-bottom: 50px;
 }
+.vasa-sifra {
+    padding-bottom: 17px;
+}
+
 .re-password {
     padding-top: 17px;
 }
+.kartice {
+    margin-top: 25px;
+}
+#ime-kartica, #broj-kartice {
+   max-width: 356px;
+}
+#vazi,#cvc {
+    max-width: 172px;
+}
+#btn-naruci{
+    max-width: 356px;
+    display: block;
+    .btn{
+        max-width: 100%;
+        display: block;
+        width: 100%;
+    }
+}
+#cvc {
+    margin-left: 15px;
+}
+
+
 .check-styling {
     padding-top: 17px;
 
@@ -475,8 +566,40 @@ h1 span {
 .form-check {
     input[type="checkbox"] {
         cursor: pointer;
-
     }
+    input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $backgroundcolor;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        background-clip: padding-box;
+        padding: 11px;
+        
+        
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background:#fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+
     input[type="checkbox"]:checked {
 
         background-color: #FFFFFF;
@@ -486,12 +609,17 @@ h1 span {
     }
 }
 
+
+
 .form-check-label {
     margin-left: 11px;
 }
 
 .check-box {
     padding-top: 42px;
+}
+.check-box-log-in {
+    padding: 21px 0px 72px 0px;
 }
 
 .no-background {
@@ -512,24 +640,26 @@ h1 span {
 }
 
 .must {
-    color: $formlisttext;
+    p {
+        color: $formlisttext;
+        font-size: 16px !important;
+    }
+  
 }
 
 .text-area {
-   max-width: 596px;
     padding-top: 40px;
     #napomena {
         height: 95px;
         max-width: 596px;
     }
 }
-
-tr {
-    td {
-        label {
-            color: #fff;
-        }
-    }
+.text-area-shop {
+    margin-top: 13px;
+}
+#napomena-contact {
+    height: 95px;
+    max-width: 536px;
 }
 
 #header-order  {
@@ -543,14 +673,14 @@ tr {
     width: 1px;
     height: 30px;
 }
- .acount{
+ .account{
      width: 50%;
     p {
         font-size: 18px;
     }
  }
 
- .acount-img {
+ .account-img {
      img {
          width: 38px;
          height: 38px;
@@ -639,5 +769,39 @@ tr {
     }
  }
 
+.social-log-in {
+    margin-bottom: 150px;
+}
 
- 
+.contact-form-btn {
+    max-width: 400px;
+    display: block;
+} 
+
+.btn-four {
+    margin-top: 35px;
+    height: 50px;
+    width: 100%;
+}
+
+.right-header-mesage {
+    margin-bottom: 35px;
+    h4 {
+        font-weight: bold;
+        font-size: 45px;
+    }
+    p {
+        font-size: 28px;
+    }
+}
+
+
+.contact-tabs {
+    max-width: 400px;
+    
+}
+
+#napomena-mesage {
+    height: 227px;
+}
+

@@ -56,100 +56,53 @@
             <div class="container" id="form-button">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-end" id="header-btn">
-                        <button class="btn btn-third">Nova Porudžbina</button>
+                        <button class="btn btn-third">Sacuvaj izmene</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12"  id="right-form">
-                <div class="right-header">
+            <div class="col-lg-12 col-md-12" id="right-social-form">
+                 <div class="right-header-social">
                     <ul class="list-unstyled d-flex">
-                        <li><h4>Moje Porudžbine</h4></li>
+                        <li><p>Moj Nalog</p></li>
+                        <li><h4>Moje Adrese</h4></li>
                     </ul>
                 </div>
-                <div class="order-tabs">
-                    <div class="right-order-tab d-flex justify-content-end align-items-center">
-                        <ul class="list-unstyled d-flex">
-                            <li><i class="fa fa-circle"></i></li>
-                            <li><p>Dostavljeno</p></li>
-                        </ul>
+                <div class="right-form-data">
+                    <div id="header-form" class="row">
+                        <div class="col-8">
+                            <form class="row g-3">
+                                <div class="col-auto">
+                                  <label for="vasaadresa">Ulica i Broj</label>
+                                  <input type="text" class="form-control tabs" id="ulicabroj" placeholder="">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="sprat">Sprat</label>
+                                    <input type="number" class="form-control tabs" id="sprat" placeholder="-">
+                                  </div>
+                                  <div class="col-auto">
+                                    <label for="interfon">Interfon</label>
+                                    <input type="text" class="form-control tabs" id="interfon" placeholder="-">
+                                  </div>
+                                  <div class="col-auto">
+                                    <label for="opstina">Opština</label>
+                                    <!--<input type="text" class="form-control tabs" id="opstina" placeholder="Izaberi opštinu">-->
+                                    <select class="form-control tabs">
+                                        <option value="0"> 
+                                            Izaberite opštinu
+                                        </option>
+                                        <option value="1"> 
+                                            Novi Beograd
+                                        </option>
+                                        <option value="2"> 
+                                            Palilula
+                                        </option>
+                                        
+                                    </select>
+                                  </div>
+                            </form> 
+                        </div>     
                     </div>
-                    <div class="row order-info d-flex justify-content-around">
-                        <div class="col-md-2 order-img">
-                            <img src="assets/img/washing-machine.png">
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="leftside-info">
-                                <li><p>Porudžbina Br:</p></li>
-                                <li><p>Vreme Porudžbine:</p></li>
-                            </ul>
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="rightside-info">
-                                <li><p>00123</p></li>
-                                <li><p>20/02/2020 14:53</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hl"></div>
-                    <div class="row" id="confirmed">
-                        <div class="col-5 d-flex align-items-center">
-                            <p>Potvrdite dostavu porudzbine:</p>
-                        </div>
-                        <div class="col-7 d-flex justify-content-end" id="header-btn">
-                            <button class="btn btn-third">Prihvacena Dostava</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="order-tabs">
-                    <div class="right-order-tab d-flex justify-content-end align-items-center">
-                        <ul class="list-unstyled d-flex">
-                            <li><i class="fa fa-circle purple"></i></li>
-                            <li><p>Zavrseno</p></li>
-                        </ul>
-                    </div>
-                    <div class="row order-info d-flex justify-content-around">
-                        <div class="col-md-2 order-img">
-                            <img src="assets/img/washing-machine.png">
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="leftside-info">
-                                <li><p>Porudžbina Br:</p></li>
-                                <li><p>Vreme Porudžbine:</p></li>
-                            </ul>
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="rightside-info">
-                                <li><p>00123</p></li>
-                                <li><p>20/02/2020 14:53</p></li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
-                <div class="order-tabs">
-                    <div class="right-order-tab d-flex justify-content-end align-items-center">
-                        <ul class="list-unstyled d-flex">
-                            <li><i class="fa fa-circle purple"></i></li>
-                            <li><p>Zavrseno</p></li>
-                        </ul>
-                    </div>
-                    <div class="row order-info d-flex justify-content-around">
-                        <div class="col-md-2 order-img">
-                            <img src="assets/img/washing-machine.png">
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="leftside-info">
-                                <li><p>Porudžbina Br:</p></li>
-                                <li><p>Vreme Porudžbine:</p></li>
-                            </ul>
-                        </div>
-                        <div class=" col-md-4 order-info-list">
-                            <ul class="list-unstyled" id="rightside-info">
-                                <li><p>00123</p></li>
-                                <li><p>20/02/2020 14:53</p></li>
-                            </ul>
-                        </div>
-                    </div> 
-                </div>
+                </div>    
             </div>        
         </div> 
     </div>    

@@ -44,110 +44,37 @@
             </div>
         </div>
         <div id="content-wrapper">
-            <div class="container" id="form-button">
-                <div class="row">
-                    <div class="col-11" id="header-btn">
-                        <button class="log-in">Nazad</button>
-                    </div>
-                </div>
-            </div>
             <div class="container" id="form">
-                <div class="row">
                     <div class="col-lg-6 col-md-12"  id="right-form">
-                        <div class="right-header">
-                             <h4>Gde kupimo odeću</h4>
+                        <div class="right-header-mesage">
+                            <h4>Pošaljite nam poruku</h4>
+                            <p>Odgovorićemo Vam u najkraćem roku.</p>
                         </div>    
                         <div class="right-form-data">
                             <form action="" id="form-style">
                                 <table>
+                                    <tr class="spacing">
+                                        <td>
+                                            <label for="vaseime">Vaše ime</label>
+                                            <input type="text" class="form-control tabs contact-tabs" id="vaseime" placeholder="Vaše ime">
+                                        </td>
+                                    </tr>    
                                     <tr>
                                         <td>
-                                            <div class="col-auto">
-                                                <label for="vasaadresa">Ulica i Broj</label>
-                                                <input type="text" class="form-control tabs" id="ulicabroj" placeholder="">
-                                            </div>
+                                            <label for="emailadresa">Email Adresa</label>
+                                            <input type="email" class="form-control tabs contact-tabs" id="emailadresa" placeholder="Email adresa">
                                         </td>
-                                        <td>
-                                            <div class="col-auto">
-                                                <label for="sprat">Sprat</label>
-                                                <input type="number" class="form-control tabs" id="sprat" placeholder="-">
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            <div class="col-auto">
-                                                <label for="interfon">Interfon</label>
-                                                <input type="text" class="form-control tabs" id="interfon" placeholder="-">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="col-auto">
-                                                <p class="must">*Obavezno polje </p>
-                                            </div>
-                                            
-                                        </td>
-                                    </tr>
-                                       
-                                    <tr>
-                                        <td>
-                                            <label for="opstina">Opština</label>
-                                            <input type="text" class="form-control tabs" id="opstina" placeholder="Izaberi opštinu">
-                                        </td>
-                                        <td>
-                                            <label for="datum">Datum</label>
-                                            <input type="date" class="form-control tabs" id="datum">
-                                        </td>
-                                        <td>
-                                            <label for="vreme">Vreme</label>
-                                            <input type="time" class="form-control tabs" id="vreme">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="check-box"> 
-                                            <ul class="list-unstyled check-style">
-                                                <li>
-                                                    <div class="form-check d-flex justify-content-between align-items-center">
-                                                    <input class="form-check-input checkbox-style" type="checkbox" value="" id="zapamti">
-                                                    <label class="form-check-label" for="zapamti">
-                                                        Zapamti adresu </label>
-                                                </li>
-                                                <li>
-                                                    <div class="form-check d-flex justify-content-between align-items-center">
-                                                    <input class="form-check-input checkbox-style" type="checkbox" value="" id="dostava">
-                                                    <label class="form-check-label" for="dostava">
-                                                        Ista adresa je i za dostavu </label>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <button class="btn btn-primary">Naruči</button>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </form>
-                        </div>    
-                    </div>
-                    <div class="col-lg-6 col-md-12"  id="right-form">
-                        <div class="right-header">
-                                <h4>Gde dostavljamo odeću</h4>
-                        </div>    
-                        <div class="right-form-data">
-                            <form action="" id="form-style">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <label for="adresa">Adresa</label>
-                                            <input type="text" class="form-control tabs" id="adresa" placeholder="Ulica,broj,sprat">
-                                        </td>
-                                    </tr>
+                                    </tr>    
                                     <tr>
                                         <td class="text-area">
-                                             <label for="napomena">Napomena</label>
-                                            <textarea class="form-control" placeholder="Ako imate napomenu, unesite je ovde" id="napomena"></textarea>
+                                             <label for="napomena">Vaša Poruka</label>
+                                            <textarea class="form-control contact-tabs" placeholder="Tekst poruke" id="napomena-mesage"></textarea>
                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="contact-form-btn"> 
+                                                <button class="btn btn-four">Naruči</button>
                                         </td>
                                     </tr>
                                 </table>

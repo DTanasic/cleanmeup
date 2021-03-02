@@ -4,6 +4,10 @@
   }
 }
 
+tr td label {
+  color: #fff;
+}
+
 .btn {
   color: #fff;
   background-color: #7AD0DB !important;
@@ -21,6 +25,15 @@
   padding-top: 110px;
   padding-bottom: 72px;
   font-weight: bold;
+}
+
+.hover {
+  text-decoration: none !important;
+  color: #77bec9;
+}
+
+.hover:hover {
+  color: #77bec9;
 }
 
 .purple-background {
